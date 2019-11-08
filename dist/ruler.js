@@ -30,7 +30,7 @@ ruler.prototype.builder = function(){
 
   var rotateRuler = function (curRuler, angle) {
     var rotation = 'rotate(' + angle + 'deg)';
-    var origin = ruler.prototype.utils.pixelize(Math.abs(parseInt(curRuler.canvas.style.left))) + ' 100%';
+    var origin = ruler.prototype.utils.pixelize(Math.abs(parseInt(curRuler.canvas.style.left))) + ' 0';
     curRuler.canvas.style.webkitTransform = rotation;
     curRuler.canvas.style.MozTransform = rotation;
     curRuler.canvas.style.OTransform = rotation;
@@ -53,7 +53,7 @@ ruler.prototype.builder = function(){
       case 'left':
         curRuler.canvas.style.top = ruler.prototype.utils.pixelize(-curRuler.canvas.height - 1);
         curRuler.orgPos = parseInt(curRuler.canvas.style.top);
-        rotateRuler(curRuler, 90);
+        rotateRuler(curRuler, -90);
         break;
     }
   };
