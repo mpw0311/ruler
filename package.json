@@ -1,9 +1,9 @@
 {
-  "version": "1.0.1",
-  "name": "ruler.js",
+  "version": "1.0.0",
+  "name": "rulerjs",
   "main": "dist/ruler.js",
   "dependencies": {},
-  "repository": "https://github.com/MrFrankel/ruler.git",
+  "repository": "https://github.com/mpw0311/ruler.git",
   "description": "canvas rulers",
   "scripts": {
     "serve": "grunt serve"
